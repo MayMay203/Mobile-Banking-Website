@@ -1,4 +1,6 @@
-*{
+*,
+::after,
+::before{
     box-sizing: border-box;
 }
 
@@ -19,8 +21,21 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Common */
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 30px;
+
+  background: #ccc;
+
+  font-size: 30px;
+  font-weight: 600;
+}
+
 .container{
-    width: 1170px;
-    max-width: calc(100% - 48px);
+    padding: 0;
 }
