@@ -5,7 +5,9 @@
 }
 
 :root{
-
+    --primary-color: #7264D6;
+    --text-color: #696D76;
+    --black-color: #212832;
 }
 
 html, body{
@@ -36,6 +38,105 @@ body{
   font-weight: 600;
 }
 
+/* Common */
 .container{
     padding: 0;
+}
+
+.btn{
+    display: inline-block;
+    min-width: 113px;
+    min-height: 52px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75;
+    border-radius: 6px;
+    background: var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header */
+.header{
+    padding: 42px 0 8px;
+    position: sticky;
+    top: -34px;
+    background-color: #fff;
+}
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__left{
+    display: flex;
+    align-items: center;
+    column-gap: 46px;
+}
+
+.navbar__list{
+    display: flex;
+    align-items: center;
+}
+
+.header__actions{
+    display: flex;
+    align-items: center;
+}
+
+.login-btn{
+    padding: 12px 28px;
+    color: var(--black-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.navbar__link{
+    padding: 8px 24px;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+    position: relative;
+}
+
+.navbar__link--active,
+.navbar__link:hover{
+    cursor: pointer;
+    color: var(--black-color);
+    text-shadow: 1px 0 0 var(--black-color);
+}
+
+.navbar__link--active::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 22px * 2);
+    height: 1px;
+    background-color: var(--primary-color);
+    border-radius: 0.5px;
+}
+/* Hero */
+.hero{
+    margin-top: 68px;
 }
