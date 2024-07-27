@@ -771,6 +771,91 @@ button{
     border-radius: 12px;
 }
 
+.install{
+    margin-top: 92px;
+    border-radius: 24px;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.install__decor-img{
+    width: 154px;
+    height: 154px;
+    position: absolute;
+}
+
+.install__inner{
+    text-align: center;
+    padding: 100px 0;
+}
+
+.install__title{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.install__title::before{
+    background-color: #fff;
+}
+
+.install__heading{
+    margin: 12px 0 18px;
+}
+
+.install__heading,
+.install__desc{
+    color: #fff;
+}
+
+.install__desc{
+    width: 40%;
+    margin:0 auto;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75
+}
+
+.install__actions{
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.install__actions img{
+    width: 182px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.install__actions img:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.install__decor-img:first-child{
+    top: 49px;
+    left: 112px;
+}
+
+.install__decor-img:nth-child(2){
+    top: 49px;
+    right: 112px;
+}
+
+.install__decor-img:nth-child(3){
+    bottom: 49px;
+    left: 166px;
+}
+
+.install__decor-img:nth-child(4){
+    bottom: 49px;
+    right: 166px;
+}
 
 
 
