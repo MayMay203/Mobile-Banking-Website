@@ -1,0 +1,205 @@
+/* PC */
+@media screen and (min-width: 992px){
+    .header__menu{
+        display: none;
+    }
+
+    .header__menu-drawer{
+        display: none;
+    }
+}
+
+/* Mobile and tablet */
+@media screen and (max-width: 991.98px) {
+    .header__navbar{
+        display: none;
+    }
+
+    .header__menu{
+        margin-left: 24px;
+    }
+
+     .overlay{
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s ease;
+    }
+
+    .input-checkbox:checked ~ .overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .input-checkbox:not(:checked) ~ .overlay{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .header__menu-drawer{
+        background-color: #FFF;
+        position: fixed;
+        inset: 0 0 0 60%;
+        z-index: 2;
+        transform: translateX(100%);
+        transition: .5s ease;
+        padding: 40px;
+    }
+
+    .input-checkbox:checked ~ .header__menu-drawer{
+        transform: translateX(0);
+    }
+
+    .input-checkbox:not(:checked) ~ .header__menu-drawer{
+        transform: translateX(100%);
+    }
+
+    .header__menu-drawer li{
+        margin-top: 24px;
+        list-style: none;
+    }
+
+    .navbar__link--active::after{
+        display: none;
+    }
+
+    .hero__form{
+        width: 80%;
+    }
+
+    .hero__row{
+        row-gap: 60px;
+    }
+
+    .hero__media{
+        justify-content: flex-end;
+    }
+
+    .guide__img{
+        width: 70%;
+    }
+
+    .guide__card-img{
+        top: 20%;
+        left: 65%;
+    }
+
+    .guide__card{
+        bottom: 18%;
+        right: 6%;
+    }
+
+    .guide__content{
+        margin-top: 60px;
+    }
+
+    .feature__media{
+        margin-top: 60px;
+    }
+
+    .feature__card-payment{
+        top: 4%;
+    }
+
+    .feature__card-income{
+        right: 25%;
+        bottom: 5%;
+    }
+
+    .feature__content{
+        margin-top: 60px;
+    }
+
+    .install__decor-img:nth-child(3),
+    .install__decor-img:nth-child(4){
+        display: none;
+    }
+    
+    .footer__columns{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 32px;
+    }
+
+    .footer__form{
+        margin-bottom: 24px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px){
+    .container{
+        padding: 0 15px;
+    }
+
+    .header__menu-drawer{
+        padding: 15px;
+    }
+
+    .hero__card-deposit{
+        display: none;
+    }
+
+    .hero__media{
+        justify-content: center;
+    }
+
+    .hero__media-right{
+        display: none;
+    }
+
+    .hero__card-fund{
+        left: 76%;
+    }
+
+    .feature__card{
+        width: 100%;
+    }
+
+    .feature__img{
+        width: 100%;
+    }
+
+    .feature__card-money{
+        display: none;
+    }
+
+    .feature__card-img{
+        bottom: -107px;
+        right: -43px;
+    }
+
+    .blog__desc{
+        width: 80%;
+    }
+
+    .install__desc{
+        width: 80%;
+    }
+
+    .install__decor-img{
+        display: none;
+    }
+
+    .footer__columns{
+        column-gap: 70px;
+    }
+
+    .footer__address{
+        width: 50%;
+    }
+
+    .footer__form{
+        width: 50%;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}

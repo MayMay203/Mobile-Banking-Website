@@ -27,3 +27,10 @@ feedbackDots.forEach((dot) => {
     })
 })
 
+const menuDrawer = document.querySelector('.header__menu-drawer')
+const footerDrawer = document.querySelector('.footer__menu-drawer')
+const footerRow = document.querySelector('.footer__row')
+const navbar = document.querySelector('.navbar__list')
+menuDrawer.innerHTML = navbar.innerHTML
+footerDrawer.innerHTML = footerRow.innerHTML
+
