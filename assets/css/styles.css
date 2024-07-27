@@ -13,7 +13,7 @@
 
 html, body{
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 html{
@@ -204,6 +204,7 @@ button{
     font-weight: 700;
     line-height: 1.17;
 }
+
 
 .hero__heading strong{
     color: var(--primary-color);
