@@ -563,6 +563,127 @@ button{
     margin-top: 160px;
 }
 
+.feedback{
+    padding: 92px 0;
+}
+
+.feedback-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.feedback-left__list,
+.feedback-right__list{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.feedback-left,
+.feedback-right{
+    width: 100%;
+    flex-shrink: 0;
+    transition: transform .3s ease;
+}
+
+
+.feedback__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 96px;
+    padding-bottom: 38px;
+}
+
+.feedback__msg-block{
+    position: relative;
+}
+
+.feedback__msg:hover{
+    border-color: #fff;
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.feedback__msg:hover.feedback__msg::after{
+    border-color: #fff;
+}
+
+
+.feedback__msg{
+    padding: 42px 28px;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.54;
+    border: 1px solid #DFE2E8;
+    z-index: 0;
+    background-color: #fff;
+}
+
+.feedback__msg::after {
+    content: "";
+    position: absolute;
+    bottom: -63px;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(54.4deg) skew(16deg);
+    width: 63.3px;
+    height: 63px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(223, 226, 232);
+    border-right: 1px solid rgb(223, 226, 232);
+}
+
+.feedback__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback__avt{
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #4AB5E3;
+}
+
+.feedback-right .feedback__avt{
+    background-color: #439F90;
+}
+
+.feedback__name{
+    margin: 20px 0 2px;
+    color: #070052;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.38;
+    text-align: center;
+}
+
+.feedback__dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.feedback__dot{
+    cursor: pointer;
+    width: 22px;
+    height: 6px;
+    border-radius: 1px;
+    border: 1px solid #9B9FAB;
+}
+
+.feedback__dot--active{
+    background-color: var(--primary-color);
+    border-color: transparent;
+}
 
 
 
